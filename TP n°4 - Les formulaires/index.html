@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Les Formulaires" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires</title>
+</head>
+
+<body>
+    <header>
+        <h1>ATASSI&nbsp;Racha&nbsp;-&nbsp;Les Formulaires</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Mon première formulaire</h2>
+            <form action="#" method="post">
+                <div>
+                    <input type="radio" name="genre" id="masculine" value="Homme">
+                    <label for="masculine">Homme</label>
+                    <input type="radio" name="genre" id="feminin" value="Femme">Femme
+                    <label for="feminin">Femme</label>
+                    <input type="radio" name="genre" id="nongenre" value="non-renseigné">
+                    <label for="Non">non-renseigné</label>
+                </div>
+                <div>
+                    <label for="Nom">Nom&nbsp;:</label>
+                    <input type="text" name="Lastname" id="Nom" placeholder="Entrée Nom">
+                </div>
+                <div>
+                    <label for="Prénom">Prénom&nbsp;:</label>
+                    <input type="text" name="Prénom" id="Prénom" placeholder="Entrée Prénom">
+                </div>
+                <div>
+                    <label for="Age">Age&nbsp;:</label>
+                    <input type="number" name="Age" id="Age" placeholder="Age" min="10" max="100">
+                </div>
+                <div>
+                    <label for="email">Enter your email</label>
+                    <input type="text" name="email" id="email" placeholder="Entre your email here">
+                </div>
+                <div>
+                    <label id="message">Message</label>
+                    <textarea placeholder="Entre your message here"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="autorisation" name="autorisation" checked>
+                    <label for="autorisation">En cochant cette case j'accepte les conditions relatives à l'utilisation
+                        de mes données personnelles.(accéder aux mentions légales)</label>
+                </div>
+                <div>
+                    <input type="submit" value="Envoyer le message">
+                </div>
+            </form>
+        </article>
+        <hr>
+        <h2>Ensemble de champs</h2>
+        <article>
+            <form action="#" method="post" title="Mon deuxieme formulaire">
+                <fieldset>
+                    <legend>MON SECOND FORMULAIRE</legend>
+                    <fieldset>
+                        <legend>Identité</legend>
+                        <label><input type="radio" name="Homme">Homme</label>
+                        <label><input type="radio" name="radio">femme</label>
+                        <label><input type="radio" name="radio">non-renseigné</label>
+                        <div>
+                            <label for="Nom">Nom&nbsp;:</label>
+                            <input type="text" name="Nom" id="Nom" placeholder="ex : Deschamps">
+                        </div>
+                        <div>
+                            <label for="Prénom">Prénom&nbsp;:</label>
+                            <input type="text" name="Prénom" id="Prénom" placeholder="ex : Didier">
+                        </div>
+                        <div>
+                            <label for="Age">Age&nbsp;:</label>
+                            <input type="number" name="Age" id="Age" placeholder="ex : 58" min="16" max="100">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Situation personnelle</legend>
+                        <label><input type="radio" name="radio">Célibataire</label>
+                        <label><input type="radio" name="radio">Marié</label>
+                        <label><input type="radio" name="radio">Veuf</label>
+                        <label><input type="radio" name="radio">Union libre</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact</legend>
+                        <div>
+                            <label for="Telephone">Telephone&nbsp;:</label>
+                            <input type="tel" name="Telephone" id="Telephone" placeholder="ex : 0625487595">
+                        </div>
+                        <div>
+                            <label for="email">Email&nbsp;:</label>
+                            <input type="text" name="email" id="email" placeholder="ex : d.d@gmail.com">
+                        </div>
+                    </fieldset>
+                    <div>
+                        <input type="checkbox" id="autorisation" name="autorisation">
+                        <label for="autorisation">En cochant cette case je confirm que les données renseignées sont
+                            exactes.</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Transmettre mes coordonnées">
+                    </div>
+                </fieldset>
+            </form>
+
+
+
+
+        </article>
+    </main>
+</body>
+
+</html>
